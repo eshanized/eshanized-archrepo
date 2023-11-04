@@ -1,23 +1,25 @@
 #!/bin/bash
 
-rm eshanized-penetration*
+rm eshanized-archrepo*
 
-echo "repo-add"
-repo-add -s -n -R eshanized-penetration.db.tar.gz *.pkg.tar.zst
+echo "####################################"
+echo "Repo Add ++"
+echo "####################################"
+repo-add -s -n -R eshanized-archrepo.db.tar.gz *.pkg.tar.zst
 
 sleep 1
 
-rm eshanized-penetration.db
-rm eshanized-penetration.db.sig
+rm eshanized-archrepo.db
+rm eshanized-archrepo.db.sig
 
-rm eshanized-penetration.files
-rm eshanized-penetration.files.sig
+rm eshanized-archrepo.files
+rm eshanized-archrepo.files.sig
 
-mv eshanized-penetration.db.tar.gz eshanized-penetration.db
-mv eshanized-penetration.db.tar.gz.sig eshanized-penetration.db.sig
+mv eshanized-archrepo.db.tar.gz eshanized-archrepo.db
+mv eshanized-archrepo.db.tar.gz.sig eshanized-archrepo.db.sig
 
-mv eshanized-penetration.files.tar.gz eshanized-penetration.files
-mv eshanized-penetration.files.tar.gz.sig eshanized-penetration.files.sig
+mv eshanized-archrepo.files.tar.gz eshanized-archrepo.files
+mv eshanized-archrepo.files.tar.gz.sig eshanized-archrepo.files.sig
 
 echo "####################################"
 echo "Repo Updated!!"
